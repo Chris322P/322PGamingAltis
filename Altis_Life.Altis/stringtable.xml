@@ -2,34 +2,34 @@
 <Project name="Altis Life RPG">
 	<Package name="Global">
 		<Key ID="STR_Global_Close">
-			<Original>Close</Original>
+			<Original>Schließen</Original>
 		</Key>
 		<Key ID="STR_Global_Sell">
-			<Original>Sell</Original>
+			<Original>Verkaufen</Original>
 		</Key>
 		<Key ID="STR_Global_Buy">
-			<Original>Buy</Original>
+			<Original>Kaufen</Original>
 		</Key>
 		<Key ID="STR_Global_Give">
-			<Original>Give</Original>
+			<Original>Geben</Original>
 		</Key>
 		<Key ID="STR_Global_Use">
-			<Original>Use</Original>
+			<Original>Benutzen</Original>
 		</Key>
 		<Key ID="STR_Global_Remove">
-			<Original>Remove</Original>
+			<Original>Entfernen</Original>
 		</Key>
 		<Key ID="STR_Global_Settings">
-			<Original>Settings</Original>
+			<Original>Einstellungen</Original>
 		</Key>
 		<Key ID="STR_Global_RentVeh">
-			<Original>Rent</Original>
+			<Original>Miten</Original>
 		</Key>
 		<Key ID="STR_Global_Retrieve">
-			<Original>Retrieve</Original>
+			<Original>Erhalten</Original>
 		</Key>
 		<Key ID="STR_Global_NoSelection">
-			<Original>You did not select anything.</Original>
+			<Original>Du hast nichts ausgewählt.</Original>
 		</Key>
 	</Package>
 	<Package name="Admin_Menu">
@@ -42,76 +42,76 @@
 	</Package>
 	<Package name="ATM_Menu">
 		<Key ID="STR_ATM_Title">
-			<Original>Bank Account Management</Original>
+			<Original>Bankkonto verwaltung</Original>
 		</Key>
 		<Key ID="STR_ATM_Withdraw">
-			<Original>Withdraw</Original>
+			<Original>Auszahlen</Original>
 		</Key>
 		<Key ID="STR_ATM_Deposit">
-			<Original>Deposit</Original>
+			<Original>Einzahlen</Original>
 		</Key>
 		<Key ID="STR_ATM_Transfer">
-			<Original>Transfer</Original>
+			<Original>Überweisen</Original>
 		</Key>
 		<Key ID="STR_ATM_GreaterThan">
-			<Original>You can't deposit more then $999,999 at a time</Original>
+			<Original>Du kannst nicht mehr als 999,999€ aufeinmal einzahlen.</Original>
 		</Key>
 		<Key ID="STR_ATM_notnumeric">
-			<Original>The amount entered isn't a numeric value.</Original>
+			<Original>Die anzahl, die du eingegeben hast ist keine Zahl.</Original>
 		</Key>
 	</Package>
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
-			<Original>Altis Mobile</Original>
+			<Original>Handy</Original>
 		</Key>
 		<Key ID="STR_CELL_TextToSend">
-			<Original>Message To Send:</Original>
+			<Original>Zu sendende Nachricht:</Original>
 		</Key>
 		<Key ID="STR_CELL_TextMSGBtn">
-			<Original>Text Message:</Original>
+			<Original>Nachricht senden:</Original>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
-			<Original>Text Police</Original>
+			<Original>Nachricht an Polizei</Original>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
-			<Original>Text Admins</Original>
+			<Original>Nachricht an  Admins</Original>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
-			<Original>Admin Message</Original>
+			<Original>Admin Nachricht</Original>
 		</Key>
 		<Key ID="STR_CELL_AdminMSGAll">
-			<Original>Admin Msg All</Original>
+			<Original>Admin Nahr. an Alle</Original>
 		</Key>
 		<Key ID="STR_CELL_EMSRequest">
-			<Original>Request EMS</Original>
+			<Original>Notartzt rufen</Original>
 		</Key>
 	</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">
-			<Original>Local Chop Shop</Original>
+			<Original>Auto Dealer</Original>
 		</Key>
 	</Package>
 	<Package name="Gang_Menu">
 		<Key ID="STR_Gang_Title">
-			<Original>Gang Management</Original>
+			<Original>Gruppen verwaltung</Original>
 		</Key>
 		<Key ID="STR_Gang_Title2">
 			<Original>Gang Management - Current Gangs</Original>
 		</Key>
 		<Key ID="STR_Gang_Join">
-			<Original>Join</Original>
+			<Original>Beitreten</Original>
 		</Key>
 		<Key ID="STR_Gang_Leave">
-			<Original>Leave</Original>
+			<Original>Verlassen</Original>
 		</Key>
 		<Key ID="STR_Gang_Lock">
-			<Original>Lock</Original>
+			<Original>Beitrit verbieten</Original>
 		</Key>
 		<Key ID="STR_Gang_Unlock">
-			<Original>Unlock</Original>
+			<Original>Beitrit erlauben</Original>
 		</Key>
 		<Key ID="STR_Gang_Kick">
-			<Original>Kick</Original>
+			<Original>Rauswerfen</Original>
 		</Key>
 		<Key ID="STR_Gang_SetLeader">
 			<Original>Set Leader</Original>
