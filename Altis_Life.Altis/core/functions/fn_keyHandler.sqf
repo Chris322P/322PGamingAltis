@@ -1,7 +1,7 @@
 /*
 	File: fn_keyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main key handler for event 'keyDown'
 */
@@ -42,7 +42,7 @@ switch (_code) do
 			_handled = true;
 		};
 	};
-	
+
 	//Map Key
 	case _mapKey:
 	{
@@ -52,7 +52,7 @@ switch (_code) do
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 		};
 	};
-	
+
 	//Holster / recall weapon.
 	case 35:
 	{
@@ -61,14 +61,14 @@ switch (_code) do
 			player action ["SwitchWeapon", player, player, 100];
 			player switchcamera cameraView;
 		};
-		
+
 		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
 			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon life_curWep_h;
 			};
 		};
 	};
-	
+
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
@@ -82,6 +82,12 @@ switch (_code) do
 			};
 		};
 	};
+
+	//CHEAT REPAIR (Shift + B)
+	case 48:
+	{
+		[] call life_fnc_admincheat_repair;
+	};
 	
 	//Restraining (Shift + R)
 	case 19:
@@ -92,7 +98,7 @@ switch (_code) do
 			[] call life_fnc_restrainAction;
 		};
 	};
-	
+
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{
@@ -106,36 +112,6 @@ switch (_code) do
 		};
 	};
 
-	//Cheat Money (Shift + C)
-	case 46:
-	{
-		if(_shift) then {_handled = true;};
-		if(_shift && __GETC__(life_adminlevel) > 1) then
-		{
-			[] call life_fnc_admincheat_money_key;
-		};
-	};
-	
-	//Cheat Repair (Shift + B)
-	case 48:
-	{
-		if(_shift) then {_handled = true;};
-		if(_shift && __GETC__(life_adminlevel) > 1) then
-		{
-			[] call life_fnc_admincheat_repair;
-		};
-	};
-	
-	//Cheat Flip (Shift + N)
-	case 49:
-	{
-		if(_shift) then {_handled = true;};
-		if(_shift && __GETC__(life_adminlevel) > 1) then
-		{
-			[] call life_fnc_admincheat_flip;
-		};
-	};
-	
 	//T Key (Trunk)
 	case 20:
 	{
@@ -176,7 +152,7 @@ switch (_code) do
 				};
 			};
 		};
-		
+
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 	//Y Player Menu
@@ -187,7 +163,7 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
-	
+
 	//F Key
 	case 33:
 	{
@@ -232,9 +208,9 @@ switch (_code) do
 			{
 				_veh = vehicle player;
 			};
-			
+
 			_locked = locked _veh;
-			
+
 			if(_veh in life_vehicles && player distance _veh < 8) then
 			{
 				if(_locked == 2) then

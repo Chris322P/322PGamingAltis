@@ -17,6 +17,6 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") && !
 	_veh setFuel 1;
 	_veh setVehicleAmmo 1;
 	_veh setDamage 0;
-	[1,false] call life_fnc_sessionHandle;
+	[] call SOCK_fnc_updateRequest;
 	titleText["Du hast dein Leben umdacht!","PLAIN"];
 };

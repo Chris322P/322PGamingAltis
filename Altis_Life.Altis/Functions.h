@@ -58,6 +58,7 @@ class Life_Client_Core
 		class admincheat_money_key {};
 		class admincheat_repair {};
 		class admincheat_flip {};
+		class admincheat_heal {};	
 	};
 	
 	class Medical_System
