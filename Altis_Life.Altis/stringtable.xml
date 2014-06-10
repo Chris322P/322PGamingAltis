@@ -304,16 +304,16 @@
 	</Package>
 	<Package name="Trunk_Menu">
 		<Key ID="STR_Trunk_TInventory">
-			<Original>Trunk Inventory</Original>
+			<Original>Fahrzeug Inventar</Original>
 		</Key>
 		<Key ID="STR_Trunk_PInventory">
-			<Original>Player Inventory</Original>
+			<Original>Spieler Inventar</Original>
 		</Key>
 		<Key ID="STR_Trunk_Take">
-			<Original>Take</Original>
+			<Original>Nehmen</Original>
 		</Key>
 		<Key ID="STR_Trunk_Store">
-			<Original>Store</Original>
+			<Original>Lagern</Original>
 		</Key>
 	</Package>
 	<Package name="Wanted_Menu">
@@ -321,7 +321,7 @@
 			<Original>APD Wanted List</Original>
 		</Key>
 		<Key ID="STR_Wanted_Pardon">
-			<Original>Pardon</Original>
+			<Original>Vergeben</Original>
 		</Key>
 	</Package>
 	<Package name="Animals">
@@ -427,7 +427,7 @@
 			<Original>%1 has impounded %2's %3</Original>
 		</Key>
 		<Key ID="STR_NOTF_AbortESC">
-			<Original>Abort available in %1</Original>
+			<Original>Abbruch verfügbar in %1</Original>
 		</Key>
 		<Key ID="STR_NOTF_DeviceIsMining">
 			<Original>This vehicle is already mining</Original>

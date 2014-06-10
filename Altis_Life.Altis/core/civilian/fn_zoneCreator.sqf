@@ -23,7 +23,7 @@ _weedZones = ["weed_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[25,25,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction['YOLO SEIN',life_fnc_gatherAction,['apple',5],0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Apples;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction['Äpfel pflücken',life_fnc_gatherAction,['apple',3,2,true],0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Apples;"];
 } foreach _appleZones;
 
 //Create peach zones
@@ -31,7 +31,7 @@ _weedZones = ["weed_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[25,25,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Peaches = player addAction['Gather Peaches',life_fnc_gatherPeaches,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Peaches;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Peaches = player addAction['Pfirsiche pflücken',life_fnc_gatherAction,['peach',3,2,true],0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Peaches;"];
 } foreach _peachZones;
 
 //Create heroin zones
@@ -39,7 +39,7 @@ _weedZones = ["weed_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_heroin = player addAction['Gather Heroin',life_fnc_gatherHeroin,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Heroin;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_heroin = player addAction['Gather Heroin',life_fnc_gatherAction,['heroinu',1,5,false],0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Heroin;"];
 } foreach _heroinZones;
 
 //Create Weed zones

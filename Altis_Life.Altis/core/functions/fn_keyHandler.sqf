@@ -234,7 +234,8 @@ switch (_code) do
 					{
 						[[_veh,0], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
-					systemChat "You have unlocked your vehicle.";
+					player say3D "car_unlock";
+					systemChat "Du hast dein Fahrzeug aufgeschlossen.";
 				}
 					else
 				{
@@ -246,7 +247,8 @@ switch (_code) do
 					{
 						[[_veh,2], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
-					systemChat "You have locked your vehicle.";
+					player say3D "car_lock";
+					systemChat "Du hast dein Fahrzeug abgeschlossen.";
 				};
 			};
 		};

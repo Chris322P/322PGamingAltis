@@ -31,6 +31,8 @@ if(X_Client) then
 [] execVM "zlt_fastrope.sqf"; //Fast Rope Mod
 _logistic = execVM "=BTC=_Logistic\=BTC=_logistic_Init.sqf";
 0 = execVM "IgiLoad\IgiLoadInit.sqf";
+[] execVM "intro.sqf"; // INTRO
+
 
 if(!StartProgress) then
 {
