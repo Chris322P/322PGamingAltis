@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_keyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -86,7 +87,17 @@ switch (_code) do
 	//CHEAT REPAIR (Shift + B)
 	case 48:
 	{
-		[] call life_fnc_admincheat_repair;
+		if(__GETC__(life_adminlevel) > 1) then {
+			[] call life_fnc_admincheat_repair;
+		};
+	};
+	
+	//CHEAT FLIP (Shift + N)
+	case 49:
+	{
+		if(__GETC__(life_adminlevel) > 1) then {
+			[] call life_fnc_admincheat_flip;
+		};
 	};
 	
 	//Restraining (Shift + R)

@@ -23,7 +23,7 @@ _weedZones = ["weed_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[25,25,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction['Gather Apples',life_fnc_gatherApples,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Apples;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction['YOLO SEIN',life_fnc_gatherAction,['apple',5],0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Apples;"];
 } foreach _appleZones;
 
 //Create peach zones
