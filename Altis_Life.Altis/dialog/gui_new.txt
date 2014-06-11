@@ -1,0 +1,146 @@
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by [322P]Chris, v1.063, #Venejy)
+////////////////////////////////////////////////////////
+
+class bg: IGUIBack
+{
+	idc = 2200;
+	x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 31.5 * GUI_GRID_W;
+	h = 13 * GUI_GRID_H;
+};
+class header: RscText
+{
+	idc = 1000;
+	text = "Charakter Window"; //--- ToDo: Localize;
+	x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 3.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 31.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	colorBackground[] = {0.85,0.25,0.25,1};
+	sizeEx = 1 * GUI_GRID_H;
+};
+class lbl_name: RscText
+{
+	idc = 1001;
+	text = "Name:"; //--- ToDo: Localize;
+	x = 4.9 * GUI_GRID_W + GUI_GRID_X;
+	y = 5.8 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class val_name: RscText
+{
+	idc = 1002;
+	text = "Chriissss--CRosss"; //--- ToDo: Localize;
+	x = 7.4 * GUI_GRID_W + GUI_GRID_X;
+	y = 5.9 * GUI_GRID_H + GUI_GRID_Y;
+	w = 7.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class lbl_lvl: RscText
+{
+	idc = 1003;
+	text = "Level:"; //--- ToDo: Localize;
+	x = 4.9 * GUI_GRID_W + GUI_GRID_X;
+	y = 6.7 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class val_level: RscText
+{
+	idc = 1004;
+	text = "15"; //--- ToDo: Localize;
+	x = 7.4 * GUI_GRID_W + GUI_GRID_X;
+	y = 6.7 * GUI_GRID_H + GUI_GRID_Y;
+	w = 7.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class head_char: RscText
+{
+	idc = 1005;
+	text = "Charakter"; //--- ToDo: Localize;
+	x = 5 * GUI_GRID_W + GUI_GRID_X;
+	y = 4.8 * GUI_GRID_H + GUI_GRID_Y;
+	w = 10 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	colorBackground[] = {0.85,0.25,0.25,1};
+};
+class val_exp: RscText
+{
+	idc = 1007;
+	text = "50/100 EXP"; //--- ToDo: Localize;
+	x = 7.4 * GUI_GRID_W + GUI_GRID_X;
+	y = 7.6 * GUI_GRID_H + GUI_GRID_Y;
+	w = 7.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class lbl_gang: RscText
+{
+	idc = 1008;
+	text = "Gang:"; //--- ToDo: Localize;
+	x = 4.9 * GUI_GRID_W + GUI_GRID_X;
+	y = 8.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class head_money: RscText
+{
+	idc = 1009;
+	text = "Money Status"; //--- ToDo: Localize;
+	x = 5 * GUI_GRID_W + GUI_GRID_X;
+	y = 10.1 * GUI_GRID_H + GUI_GRID_Y;
+	w = 10 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	colorBackground[] = {0.85,0.25,0.25,1};
+};
+class lbl_xp: RscText
+{
+	idc = 1006;
+	text = "EXP:"; //--- ToDo: Localize;
+	x = 4.9 * GUI_GRID_W + GUI_GRID_X;
+	y = 7.6 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class val_gang: RscText
+{
+	idc = 1010;
+	text = "Die Krassen Mongos"; //--- ToDo: Localize;
+	x = 7.4 * GUI_GRID_W + GUI_GRID_X;
+	y = 8.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 7.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	sizeEx = 0.8 * GUI_GRID_H;
+};
+class head_licnece: RscText
+{
+	idc = 1011;
+	text = "Lizenzen"; //--- ToDo: Localize;
+	x = 15.61 * GUI_GRID_W + GUI_GRID_X;
+	y = 4.8 * GUI_GRID_H + GUI_GRID_Y;
+	w = 10 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+	colorBackground[] = {0.85,0.25,0.25,1};
+};
+class struct_licence: RscStructuredText
+{
+	idc = 1100;
+	x = 15.8 * GUI_GRID_W + GUI_GRID_X;
+	y = 6 * GUI_GRID_H + GUI_GRID_Y;
+	w = 9.5 * GUI_GRID_W;
+	h = 8.5 * GUI_GRID_H;
+	colorBackground[] = {0,0,0,0};
+	sizeEx = 0.2 * GUI_GRID_H;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////

@@ -376,7 +376,7 @@
 			<Original>Fishing net pulled up.</Original>
 		</Key>
 		<Key ID="STR_NOTF_InvFull">
-			<Original>Your inventory space is full.</Original>
+			<Original>Dein Inventar ist voll.</Original>
 		</Key>
 		<Key ID="STR_NOTF_Gathering">
 			<Original>Gathering %1...</Original>
@@ -448,7 +448,7 @@
 			<Original>Completed cycle, the device has mined %1</Original>
 		</Key>
 		<Key ID="STR_NOTF_OutOfFuel">
-			<Original>Vehicle is out of fuel</Original>
+			<Original>Dein Fahrzeug hat kein Benzin mehr</Original>
 		</Key>
 	</Package>
 	<Package name="Life_Items">
@@ -550,6 +550,20 @@
 		</Key>
 		<Key ID="STR_vInAct_DeviceMine">
 			<Original>Mine from device</Original>
+		</Key>
+	</Package>
+	<Package name="Interactions">
+		<Key ID="STR_INTER_Action_cancelld">
+			<Original>Aktion abgebrochen</Original>
+		</Key>
+		<Key ID="STR_INTER_Repair">
+			<Original>Repariere %1</Original>
+		</Key>
+		<Key ID="STR_INTER_Repaired">
+			<Original>Du hast das Fahrzeug repariert.</Original>
+		</Key>
+		<Key ID="STR_INTER_Repair_Outsite">
+			<Original>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Original>
 		</Key>
 	</Package>
 </Project>
